@@ -9,19 +9,19 @@
 <body>
      <p>Welcome to the Chat App !</p>
 
+     <div class="test"></div>
+
+     <form>
+         <div>
+             <label>message</label>
+             <input type="text" name="message" id="message">
+             <button type="submit">send message</button>
+         </div>
+         <div></div>
+     </form>
+
      <script src="https://cdn.socket.io/4.0.1/socket.io.js"></script>
-     <script type="text/javascript">
-        let socket = io();
-
-         socket.on("connect",()=>{
-             console.log("Connected to server.");
-         });
-
-         socket.on("disconnect",()=>{
-             console.log("Disconnecred from  server.");
-         });
-
-    </script>
+     <script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
